@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Revert Github Header",
+  "version": "0.0.1",
+  "description": "",
+  "icons": {
+    "16": "ico/icon_16.png",
+    "48": "ico/icon_48.png",
+    "128": "ico/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "ico/icon_16.png"
+  },
+  "permissions": [],
+  "background": {
+    "persistent": false,
+    "scripts": ["src/empty.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*",
+        "*://*.github.com/*"
+      ],
+      "css": ["sty/old_header.css"],
+      "js": ["src/empty.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
