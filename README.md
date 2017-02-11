@@ -4,7 +4,7 @@ dark header but would rather have a day/night mode which would change the site
 theme completely.
 
 #How is this different then other solutions
-This solution avoids any update flashes since js is not involved in the solution.
+Avoids any update flashes since javascript is not involved in the solution.
 
 #Manual install
 - git clone this repo
